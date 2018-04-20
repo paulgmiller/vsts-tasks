@@ -20,7 +20,8 @@ async function run() {
         }
         tl.mkdirP(cwd);
         tl.cd(cwd);
-
+        
+        bash.arg("-o igncr");
         bash.arg(scriptPath);
 
         // additional args should always call argString.  argString() parses quoted arg strings
